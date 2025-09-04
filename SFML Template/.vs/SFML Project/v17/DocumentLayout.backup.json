@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Nino\\source\\repos\\SFML-Project\\SFML Template\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{24191BD3-A87B-4679-9592-19C2EFC02BDD}|sfml check\\sfml check.vcxproj|C:\\Users\\Nino\\source\\repos\\SFML-Project\\SFML Template\\sfml check\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{24191BD3-A87B-4679-9592-19C2EFC02BDD}|sfml check\\sfml check.vcxproj|solutionrelative:sfml check\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 227,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\Nino\\source\\repos\\SFML-Project\\SFML Template\\sfml check\\Main.cpp",
+              "RelativeDocumentMoniker": "sfml check\\Main.cpp",
+              "ToolTip": "C:\\Users\\Nino\\source\\repos\\SFML-Project\\SFML Template\\sfml check\\Main.cpp",
+              "RelativeToolTip": "sfml check\\Main.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAcwBoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-02T09:04:39.106Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
