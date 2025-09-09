@@ -3,31 +3,16 @@
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "Game.h"
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(640 , 480), "SFML works!");
-    sf::CircleShape shape(100.f);
-	sf::CircleShape shape2(50.f);
-    shape.setFillColor(sf::Color::Green);
-	shape2.setFillColor(sf::Color::Red);
+    Game mijnSpelletje;
 
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-
-        window.clear();
-        window.draw(shape);
-		window.draw(shape2);
-        window.display();
+    if (mijnSpelletje.GetIsRunning()) {
+        mijnSpelletje.Update();
     }
 
-    return 0;
 }
 
 //sem sexy branch 
