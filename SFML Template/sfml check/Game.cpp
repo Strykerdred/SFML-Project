@@ -1,5 +1,6 @@
 #include "Game.h"
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 #include <iostream>
 Game::Game() {
     isRunning = true;
@@ -14,10 +15,14 @@ bool Game::GetIsRunning() {
 }
 void Game::Update() {
     sf::RenderWindow window(sf::VideoMode(640, 480), "SFML works!");
-    sf::RectangleShape square(sf::Vector2f(640, 480));
-    sf::CircleShape shape(100.f);
-    sf::CircleShape shape2(50.f);
-    square.setFillColor(sf::Color::Blue);
+    sf::RectangleShape square(sf::Vector2f(50, 480));
+    sf::RectangleShape square2(sf::Vector2f(640, 50));
+    sf::RectangleShape square3(sf::Vector2f(50, 1080));
+    sf::CircleShape shape(25.f);
+    sf::CircleShape shape2(25.f);
+    square.setFillColor(sf::Color::Red);
+    square2.setFillColor(sf::Color::Red);
+    square3.setFillColor(sf::Color::Red);
     shape.setFillColor(sf::Color::Green);
     shape2.setFillColor(sf::Color::Red);
 
@@ -32,6 +37,8 @@ void Game::Update() {
 
         window.clear();
         window.draw(square);
+        window.draw(square2);
+        window.draw(square3);
         window.draw(shape);
         window.draw(shape2);
         window.display();
