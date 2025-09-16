@@ -58,12 +58,17 @@ void Game::Update()
 
         if (player.GetIsAlive()) {
             window.draw(player.GetShape());
+
         }
         else {
             window.draw(gameOver);
         }
         
+        
 
         window.display();
+
+
     }
+
 }
