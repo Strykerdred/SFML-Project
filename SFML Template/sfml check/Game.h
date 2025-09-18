@@ -1,4 +1,8 @@
 #pragma once
+#include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
+#include <iostream> 
+
 class Game
 {
 public:
@@ -11,8 +15,13 @@ public:
 	//return type, functie naam, ( argumenten );
 	bool GetIsRunning();
 
+
+	sf::RenderWindow window{sf::VideoMode(640, 480), "SFML works!" };
+
+	int aboo(); //() betekent functie.
 private:
 	bool isRunning = true;
+
 protected:
 
 };

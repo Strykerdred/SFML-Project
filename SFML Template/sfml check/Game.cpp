@@ -1,8 +1,9 @@
-#include "Game.h"
+#include "Game.h" //het heeft "" inplaats van <> omdat het een eigen bestand is.
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
-#include <iostream>
-Game::Game() {
+#include <iostream> //zorgt dat we de c:out kunnen gebruiken, de io staat voor input output.
+Game::Game()
+{
     isRunning = true;
 }
 Game::~Game() {
@@ -14,7 +15,7 @@ bool Game::GetIsRunning() {
 
 }
 void Game::Update() {
-    sf::RenderWindow window(sf::VideoMode(640, 480), "SFML works!");
+
     sf::RectangleShape square(sf::Vector2f(50, 480));
     sf::RectangleShape square2(sf::Vector2f(640, 50));
     sf::RectangleShape square3(sf::Vector2f(50, 1080));
