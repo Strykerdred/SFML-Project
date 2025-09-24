@@ -16,7 +16,7 @@ public:
 	bool GetIsRunning();
 
 
-	sf::RenderWindow window{sf::VideoMode(640, 480), "SFML works!" };
+	sf::RenderWindow window{sf::VideoMode(640, 480), "Cap-Nam!" };
 
 	int aboo(); //() betekent functie.
 private:

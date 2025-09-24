@@ -43,15 +43,25 @@ void Game::Update() {
     bottom.setFillColor(sf::Color::Red);
     walls.push_back(bottom);
 
-    // Add more walls for a Pac-Man layout as needed
-    // Example:
+	//Pushback systeem wat zorgt dat je gemakkelijk meerdere walls kan toevoegen.
     sf::RectangleShape innerWall(sf::Vector2f(320, borderThickness));
-    innerWall.setPosition(160, 100);
+    innerWall.setPosition(160, 80);
     innerWall.setFillColor(sf::Color::Red);
     walls.push_back(innerWall);
 
+    sf::RectangleShape innerWall1A(sf::Vector2f(320, borderThickness));
+    innerWall1A.setPosition(490, 160);
+    innerWall1A.setFillColor(sf::Color::Red);
+    walls.push_back(innerWall1A);
+
+    sf::RectangleShape innerWall1B(sf::Vector2f(150, borderThickness));
+    innerWall1B.setPosition(0, 160);
+    innerWall1B.setFillColor(sf::Color::Red);
+    walls.push_back(innerWall1B);
+
+
     sf::RectangleShape innerWall1(sf::Vector2f(320, borderThickness));
-    innerWall1.setPosition(160, 200);
+    innerWall1.setPosition(160, 230);
     innerWall1.setFillColor(sf::Color::Red);
     walls.push_back(innerWall1);
 
@@ -71,10 +81,9 @@ void Game::Update() {
     innerWall3.setFillColor(sf::Color::Red);
     walls.push_back(innerWall3);
 
-    sf::CircleShape shape(25.f);
-    sf::CircleShape shape2(25.f);
-    shape.setFillColor(sf::Color::Green);
-    shape2.setFillColor(sf::Color::Yellow);
+
+    sf::CircleShape shape(15.f);
+    shape.setFillColor(sf::Color::Yellow);
 
     while (window.isOpen())
     {
@@ -89,7 +98,6 @@ void Game::Update() {
         for (auto& wall : walls)
             window.draw(wall);
         window.draw(shape);
-        window.draw(shape2);
         window.display();
     }
 }

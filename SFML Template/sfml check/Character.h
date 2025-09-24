@@ -12,7 +12,6 @@ public:
 
 private:
 	int health;
-	int mana;
 	std::string name;
 };
 
