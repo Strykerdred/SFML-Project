@@ -2,6 +2,9 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 #include <iostream> //zorgt dat we de c:out kunnen gebruiken, de io staat voor input output.
+#include "Player.h"
+
+
 Game::Game()
 {
     isRunning = true;
@@ -18,7 +21,7 @@ void Game::Update() {
 
     const float windowWidth = 640;
     const float windowHeight = 480;
-    const float borderThickness = 20;
+    const float borderThickness = 10;
 
     std::vector<sf::RectangleShape> walls;
 
@@ -93,11 +96,12 @@ void Game::Update() {
             if (event.type == sf::Event::Closed)
                 window.close();
         }
-
+        player.Movement();
         window.clear();
         for (auto& wall : walls)
             window.draw(wall);
         window.draw(shape);
+		window.draw(player.GetPacman());
         window.display();
     }
 }

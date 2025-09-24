@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 #include <iostream> 
+#include "Player.h"
 
 class Game
 {
@@ -11,16 +12,14 @@ public:
 
 	void Update();
 
-	//structuur van de functie:
-	//return type, functie naam, ( argumenten );
 	bool GetIsRunning();
-
 
 	sf::RenderWindow window{sf::VideoMode(640, 480), "Cap-Nam!" };
 
 	int aboo(); //() betekent functie.
 private:
 	bool isRunning = true;
+	Player player; // Add this line to define 'player'
 
 protected:
 
