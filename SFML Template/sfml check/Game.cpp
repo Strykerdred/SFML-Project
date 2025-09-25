@@ -90,6 +90,7 @@ void Game::Update() {
 
     while (window.isOpen())
     {
+
         sf::Event event;
         while (window.pollEvent(event))
         {
