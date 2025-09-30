@@ -1,5 +1,6 @@
 #include "Game.h"
 #include "Collision.h"
+#include "MyShape.h"
 
 Game::Game()
 {
@@ -18,7 +19,11 @@ void Game::Update()
     sf::RenderWindow window(sf::VideoMode(1000, 800), "SFML works!");
     window.setFramerateLimit(60);
 
-    // Enemy lineup
+    // SF Drawable
+    /*MyShape myShape;
+    myShape.setPosition(400, 300);*/
+
+
     sf::CircleShape Evil(20.f);
 
 	Player player;
@@ -49,15 +54,12 @@ void Game::Update()
 	    player.Movement(window);
         player.Collision(enemy);
 
-        if (Collision::CircleCollision(player.GetShape(), enemy.GetShape()))
-        {
-            // Handle collision (e.g., reset positions, reduce lives, etc.)
-        }
-
-
-
-		// Rendering
+		// render
         window.clear(sf::Color::Black);
+
+        // sf drawable
+        //window.draw(myShape);
+
         window.draw(enemy.GetShape());
 
         if (player.GetIsAlive()) {

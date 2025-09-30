@@ -33,5 +33,5 @@ void Collision::KeepCircleInBounds(sf::CircleShape& circle, const sf::RenderWind
 
 void updatePlayerPosition(sf::CircleShape& player, const sf::Vector2f& velocity, const sf::RenderWindow& window)
 {
-    player.move(velocity); // Remove the window argument, only pass velocity
+    player.move(velocity);
 }
