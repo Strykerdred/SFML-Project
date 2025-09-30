@@ -10,8 +10,8 @@ public:
 	Game();
 	~Game();
 
-	void Update();
 	//return type, functie naam ( argumenten );
+	void Update();
 	bool getIsRunning();
 
 private:

@@ -1,6 +1,5 @@
 #include "Game.h"
-
-
+#include "Collision.h"
 
 Game::Game()
 {
@@ -16,7 +15,7 @@ bool Game::getIsRunning()
 }
 void Game::Update()
 {
-    sf::RenderWindow window(sf::VideoMode(640, 480), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(1000, 800), "SFML works!");
     window.setFramerateLimit(60);
 
     // Enemy lineup
@@ -47,8 +46,13 @@ void Game::Update()
             if (event.type == sf::Event::Closed)
                 window.close();
         }
-	    player.Movement();
+	    player.Movement(window);
         player.Collision(enemy);
+
+        if (Collision::CircleCollision(player.GetShape(), enemy.GetShape()))
+        {
+            // Handle collision (e.g., reset positions, reduce lives, etc.)
+        }
 
 
 
