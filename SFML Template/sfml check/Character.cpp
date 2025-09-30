@@ -16,7 +16,7 @@ void Character::Update(float dt)
 {
 }
 
-void Character::draw(sf::RenderTarget& target, sf::RenderStates states) const
-{
-	    target.draw(m_sprite, states);
-}
+//void Character::draw(sf::RenderTarget& target, sf::RenderStates states) const
+//{
+	    //target.draw(m_sprite, states);
+//}

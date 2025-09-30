@@ -18,14 +18,14 @@ bool Game::GetIsRunning() {
 
 }
 void Game::Update() {
-
-    const float windowWidth = 640;
-    const float windowHeight = 480;
-    const float borderThickness = 10;
+    
+    const float windowWidth = 800;
+    const float windowHeight = 800;
+    const float borderThickness = 16;
 
     std::vector<sf::RectangleShape> walls;
 
-    // Add borders
+    // borders
     sf::RectangleShape left(sf::Vector2f(borderThickness, windowHeight));
     left.setPosition(0, 0);
     left.setFillColor(sf::Color::Red);

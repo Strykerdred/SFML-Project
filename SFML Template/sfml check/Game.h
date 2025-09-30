@@ -14,7 +14,7 @@ public:
 
 	bool GetIsRunning();
 
-	sf::RenderWindow window{sf::VideoMode(640, 480), "Cap-Nam!" };
+	sf::RenderWindow window{sf::VideoMode(800, 800), "Cap-Nam!" };
 
 	int aboo(); //() betekent functie.
 private:

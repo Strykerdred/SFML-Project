@@ -12,7 +12,7 @@ public:
 	void MoveTo(float x, float y);
 	void Update(float dt);
 
-	void draw(sf::RenderTarget& target, sf::RenderStates states) const override {}
+	//void draw(sf::RenderTarget& target, sf::RenderStates states) const override {}
 	
 private:
 
