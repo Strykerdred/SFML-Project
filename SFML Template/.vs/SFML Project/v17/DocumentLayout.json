@@ -106,8 +106,7 @@
               "RelativeToolTip": "sfml check\\Character.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-11T08:53:41.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T08:53:41.737Z"
             },
             {
               "$type": "Document",
@@ -119,8 +118,7 @@
               "RelativeToolTip": "sfml check\\Character.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-11T08:50:55.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T08:50:55.394Z"
             },
             {
               "$type": "Document",
@@ -130,7 +128,7 @@
               "RelativeDocumentMoniker": "sfml check\\Game.cpp",
               "ToolTip": "C:\\Users\\semvh\\SFML-Project\\SFML Template\\sfml check\\Game.cpp",
               "RelativeToolTip": "sfml check\\Game.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAFsAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-09T09:16:41.024Z",
               "EditorCaption": ""
@@ -145,8 +143,7 @@
               "RelativeToolTip": "sfml check\\Game.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-09T09:16:26.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-09T09:16:26.765Z"
             },
             {
               "$type": "Document",
@@ -158,8 +155,7 @@
               "RelativeToolTip": "sfml check\\Main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-02T09:04:39.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-02T09:04:39.106Z"
             }
           ]
         }

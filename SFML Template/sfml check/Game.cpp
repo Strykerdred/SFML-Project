@@ -84,6 +84,16 @@ void Game::Update() {
     innerWall3.setFillColor(sf::Color::Red);
     walls.push_back(innerWall3);
 
+    sf::RectangleShape floor(sf::Vector2f(320, borderThickness));
+    floor.setPosition(100, 500);
+    floor.setFillColor(sf::Color::Red);
+    walls.push_back(floor);
+    
+    sf::RectangleShape floor2(sf::Vector2f(250, borderThickness));
+    floor2.setPosition(520, 450);
+    floor2.setFillColor(sf::Color::Red);
+    walls.push_back(floor2);
+
 
     sf::CircleShape shape(15.f);
     shape.setFillColor(sf::Color::Yellow);
