@@ -1,26 +1,19 @@
-#include <SFML/Graphics.hpp>
-#include <iostream>
-
-
 #pragma once
+#include <SFML/Graphics.hpp>
+
 class Player
 {
 public:
     Player();
     ~Player();
+
     void Movement();
+    void CheckCollision(const sf::RectangleShape& wall);
     bool GetIsAlive();
-
-
-    sf::CircleShape GetShape();
-    sf::CircleShape& GetPacman() { return pacman; }
+    sf::CircleShape& GetPacman(); // Changed to return reference
+    void SetPosition(float x, float y);
 
 private:
-    bool pacmanDead = false;
     sf::CircleShape pacman;
-
-protected:
-
-
-
+    bool pacmanDead = false;
 };

@@ -14,6 +14,8 @@ public:
 
 	bool GetIsRunning();
 
+	void CreateWall(std::vector<sf::RectangleShape>& walls, float x, float y, float width, float height, sf::Color color);
+
 	sf::RenderWindow window{sf::VideoMode(800, 800), "Cap-Nam!" };
 
 	int aboo(); //() betekent functie.
