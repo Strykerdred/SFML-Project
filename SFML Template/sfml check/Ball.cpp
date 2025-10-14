@@ -6,7 +6,7 @@ Ball::Ball()
 {
     ballShape.setRadius(ballRadius);
     ballShape.setFillColor(sf::Color::White);
-    ballShape.setOrigin(ballRadius, ballRadius); // Center the origin
+    ballShape.setOrigin(ballRadius, ballRadius); 
     collected = false;
 }
 

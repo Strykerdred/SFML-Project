@@ -1,0 +1,18 @@
+﻿  Ball.cpp
+C:\Users\semvh\SFML-Project\SFML Template\sfml check\Ball.h(2,10): error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  (compiling source file 'Ball.cpp')
+  
+  Game.cpp
+C:\Users\semvh\SFML-Project\SFML Template\sfml check\Game.h(2,10): error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  (compiling source file 'Game.cpp')
+  
+  Image.cpp
+C:\Users\semvh\SFML-Project\SFML Template\sfml check\Image.h(3,10): error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  (compiling source file 'Image.cpp')
+  
+  Main.cpp
+C:\Users\semvh\SFML-Project\SFML Template\sfml check\Main.cpp(4,10): error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  Player.cpp
+C:\Users\semvh\SFML-Project\SFML Template\sfml check\Player.h(2,10): error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  (compiling source file 'Player.cpp')
+  

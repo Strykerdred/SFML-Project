@@ -1,3 +1,8 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (sfml check.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Ball.cpp
+C:\Users\semvh\SFML-Project\SFML Template\sfml check\Ball.cpp(36,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   Game.cpp
+  Main.cpp
+  Player.cpp
+  Generating Code...
   sfml check.vcxproj -> C:\Users\semvh\SFML-Project\SFML Template\Debug\SFML.exe
