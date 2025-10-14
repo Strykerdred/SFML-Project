@@ -30,7 +30,7 @@ void Player::CheckCollision(const sf::RectangleShape& wall)
     if (!pacmanDead && pacman.getGlobalBounds().intersects(wall.getGlobalBounds()))
     {
         pacmanDead = true;
-        pacman.setFillColor(sf::Color::Transparent); // Minvisible when dead
+        pacman.setFillColor(sf::Color::Transparent); // Make invisible when dead
     }
 }
 

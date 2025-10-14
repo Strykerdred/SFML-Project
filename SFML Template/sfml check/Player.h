@@ -10,7 +10,7 @@ public:
     void Movement();
     void CheckCollision(const sf::RectangleShape& wall);
     bool GetIsAlive();
-    sf::CircleShape& GetPacman();
+    sf::CircleShape& GetPacman(); // Changed to return reference
     void SetPosition(float x, float y);
 
 private:

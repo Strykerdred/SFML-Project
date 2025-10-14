@@ -33,18 +33,18 @@ void Game::Update() {
 
     std::vector<sf::RectangleShape> walls;
 
-    // Borders
+    // Create solid borders (completely closed)
     CreateWall(walls, 0, 0, borderThickness, windowHeight); // left
     CreateWall(walls, 0, 0, windowWidth, borderThickness); // top
     CreateWall(walls, windowWidth - borderThickness, 0, borderThickness, windowHeight); // right
     CreateWall(walls, 0, windowHeight - borderThickness, windowWidth, borderThickness); // bottom
 
-   // spawn
+   // spawn area
     float spawnSize = 120;
     float spawnX = 60;
     float spawnY = windowHeight - spawnSize - 60;
 
-    // Map
+    // Maze layout
     std::vector<std::vector<float>> horizontalWalls = {
         {160, 80, 480},
         {80, 160, 160}, {320, 160, 160},
@@ -57,7 +57,7 @@ void Game::Update() {
         {80, 720, 80}, {240, 720, 160}, {560, 720, 80},
         {640, 160, 80}, {640, 400, 80}, {640, 640, 80}
     };
-    // ugly mess SOS
+
     std::vector<std::vector<float>> verticalWalls = {
         {80, 10, 170}, {80, 240, 80}, {80, 300, 180}, {80, 560, 80},
         {160, 80, 80}, {160, 320, 80}, {160, 480, 80}, {160, 640, 80},
@@ -70,7 +70,7 @@ void Game::Update() {
         {720, 160, 80}, {720, 320, 80}, {720, 480, 80}, {720, 640, 80}
     };
 
-    // create Walls
+    // Create all walls
     for (auto& wall : horizontalWalls) {
         CreateWall(walls, wall[0], wall[1], wall[2], borderThickness);
     }
@@ -78,16 +78,16 @@ void Game::Update() {
         CreateWall(walls, wall[0], wall[1], borderThickness, wall[2]);
     }
 
-    // Create balls in the maze
+    // Create 5 balls at strategic positions in the maze
     std::vector<Ball> balls;
     balls.resize(5);
 
-	// Ball positions   
-    balls[0].SetPosition(120, 120);   // links boven
-    balls[1].SetPosition(360, 200);   // top mid
-    balls[2].SetPosition(680, 120);   // rechts boven
-    balls[3].SetPosition(120, 400);   // links mid
-    balls[4].SetPosition(680, 680);   // rechts onder
+    // Set ball positions in open areas of the maze
+    balls[0].SetPosition(120, 120);   // Top-left area
+    balls[1].SetPosition(360, 200);   // Top-center area
+    balls[2].SetPosition(680, 120);   // Top-right area
+    balls[3].SetPosition(120, 400);   // Middle-left area
+    balls[4].SetPosition(680, 680);   // Bottom-right area
 
     // Set player starting position
     float playerStartX = spawnX + 20;
