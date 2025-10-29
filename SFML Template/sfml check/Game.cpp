@@ -39,7 +39,7 @@ void Game::Update() {
     std::vector<float> platformMinX;
     std::vector<float> platformMaxX;
 
-    // Create border walls
+    // border walls
     CreateWall(walls, 0, 0, borderThickness, windowHeight); // left
     CreateWall(walls, 0, 0, windowWidth, borderThickness); // top
     CreateWall(walls, windowWidth - borderThickness, 0, borderThickness, windowHeight); // right
@@ -156,7 +156,7 @@ void Game::Update() {
     Image victoryImage;
     bool showVictory = false;
 
-    // Load victory image - UPDATE THE PATH TO YOUR winLoL.png FILE
+    // victory image
     victoryImage.LoadFromFile("C:/Users/semvh/Downloads/winLoL.png");
 
     // Center the image on screen using the new GetWidth/GetHeight methods
@@ -199,7 +199,7 @@ void Game::Update() {
             }
         }
 
-        // UPDATE MOVING PLATFORMS
+		// Update moving platforms
         for (int i = 0; i < walls.size(); i++) {
             if (isMovingPlatform[i]) {
                 // Move the platform

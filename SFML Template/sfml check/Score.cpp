@@ -12,24 +12,7 @@ Score::Score() : collectedBalls(0), totalBalls(0)
             return;
         }
     }
-#elif __linux__
-    // Linux paths
-    if (!font.loadFromFile("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf")) {
-        if (!font.loadFromFile("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")) {
-            if (!font.loadFromFile("/usr/share/fonts/truetype/freefont/FreeSans.ttf")) {
-                std::cout << "ERROR: Could not load system font!" << std::endl;
-                return;
-            }
-        }
-    }
-#elif __APPLE__
-    // macOS paths
-    if (!font.loadFromFile("/Library/Fonts/Arial.ttf")) {
-        if (!font.loadFromFile("/System/Library/Fonts/Helvetica.ttc")) {
-            std::cout << "ERROR: Could not load system font!" << std::endl;
-            return;
-        }
-    }
+
 #endif
 
     scoreText.setFont(font);
