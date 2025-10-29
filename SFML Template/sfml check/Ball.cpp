@@ -6,7 +6,7 @@ Ball::Ball()
 {
     ballShape.setRadius(ballRadius);
     ballShape.setFillColor(sf::Color::White);
-    ballShape.setOrigin(ballRadius, ballRadius); // Center the origin
+    ballShape.setOrigin(ballRadius, ballRadius);
     collected = false;
 }
 
@@ -48,7 +48,22 @@ void Ball::Collect()
     collected = true;
 }
 
+void Ball::Reset()
+{
+    collected = false;
+}
+
 sf::Vector2f Ball::GetPosition() const
 {
     return ballShape.getPosition();
+}
+
+bool Ball::CheckAllCollected(const std::vector<Ball>& balls)
+{
+    for (const auto& ball : balls) {
+        if (!ball.IsCollected()) {
+            return false;
+        }
+    }
+    return true;
 }
