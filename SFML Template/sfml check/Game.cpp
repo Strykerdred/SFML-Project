@@ -60,8 +60,8 @@ void Game::Update() {
         {0, 400, 80}, {240, 400, 160}, {560, 400, 240},
         {160, 480, 80}, {480, 480, 80},
         {0, 560, 160}, {320, 560, 160}, {640, 560, 160},
-        {80, 640, 240}, {400, 640, 320},
-        {80, 720, 160}, {320, 720, 160}, {560, 720, 160}
+        {10, 640, 440}, {250, 640, 480},
+        {80, 720, 60}, {320, 720, 160}, {80, 720, 160}
     };
 
     std::vector<std::vector<float>> verticalWalls = {
@@ -72,7 +72,7 @@ void Game::Update() {
         {400, 160, 80}, {400, 400, 80}, {400, 640, 80},
         {480, 80, 80}, {480, 400, 80}, {480, 640, 80},
         {560, 160, 80}, {560, 400, 80}, {560, 640, 80},
-        {640, 80, 80}, {640, 400, 80}, {640, 640, 80},
+        {640, 80, 80}, {640, 400, 80}, {640, 700, 100},
         {720, 0, 80}, {720, 160, 80}, {720, 320, 80}, {720, 480, 80}, {720, 640, 80}
     };
 
@@ -135,7 +135,7 @@ void Game::Update() {
     float imageY = (windowHeight - victoryImage.GetHeight()) / 2;
     victoryImage.SetPosition(imageX, imageY);
 
-    player.SetPosition(40, 640);
+    player.SetPosition(40, 700);
 
     // Game loop
     while (window.isOpen())
@@ -150,7 +150,7 @@ void Game::Update() {
             if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::R && !player.GetIsAlive()) {
                 Player newPlayer;
                 player = newPlayer;
-                player.SetPosition(40, 640);
+                player.SetPosition(40, 700);
 
                 // Reset balls directly
                 balls.clear();
